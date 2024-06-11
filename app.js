@@ -5,7 +5,7 @@ const { initModels } = require('./models');
 
 const itemRoutes = require('./routes/itemRoutes');
 const usuarioRoutes = require('./routes/usuarioRoutes');
-const abrigoRoutes= require('./routes/abrigoRoutes');
+const abrigoRoutes = require('./routes/abrigoRoutes');
 const doacaoRoutes = require('./routes/doacaoRoutes');
 
 const app = express();

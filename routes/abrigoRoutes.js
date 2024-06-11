@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const abrigoController = require('../controllers/abrigoController');
 
-router.post('/abrigos', abrigoController.createAbrigo);
-router.get('/abrigos', abrigoController.getAllAbrigos);
-router.get('/abrigos/:id', abrigoController.getAbrigoById);
-router.put('/abrigos/:id', abrigoController.updateAbrigo);
-router.delete('/abrigos/:id', abrigoController.deleteAbrigo);
+router.post('/', abrigoController.createAbrigo);  // Observe a rota relativa
+router.get('/', abrigoController.getAllAbrigos);
+router.get('/:id', abrigoController.getAbrigoById);
+router.put('/:id', abrigoController.updateAbrigo);
+router.delete('/:id', abrigoController.deleteAbrigo);
 
 module.exports = router;

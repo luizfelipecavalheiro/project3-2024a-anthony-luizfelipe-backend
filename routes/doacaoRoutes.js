@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const doacoesController = require('../controllers/doacaoController');
+const doacaoController = require('../controllers/doacaoController');
 
-router.post('/doacoes', doacoesController.createDoacao);
-router.get('/doacoes', doacoesController.getAllDoacoes);
-router.get('/doacoes/:id', doacoesController.getDoacaoById);
-router.put('/doacoes/:id', doacoesController.updateDoacao);
-router.delete('/doacoes/:id', doacoesController.deleteDoacao);
+router.post('/', doacaoController.createDoacao);
+router.get('/', doacaoController.getAllDoacoes);
+router.get('/:id', doacaoController.getDoacaoById);
+router.put('/:id', doacaoController.updateDoacao);
+router.delete('/:id', doacaoController.deleteDoacao);
 
 module.exports = router;

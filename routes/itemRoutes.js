@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const itemController = require('../controllers/itemController');
 
-router.post('/itens', itemController.createItem);
-router.get('/itens', itemController.getAllItens);
-router.get('/itens/:id', itemController.getItemById);
-router.put('/itens/:id', itemController.updateItem);
-router.delete('/itens/:id', itemController.deleteItem);
+router.post('/', itemController.createItem);
+router.get('/', itemController.getAllItens);
+router.get('/:id', itemController.getItemById);
+router.put('/:id', itemController.updateItem);
+router.delete('/:id', itemController.deleteItem);
 
 module.exports = router;
