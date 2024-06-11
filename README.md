@@ -1,4 +1,4 @@
-# Stock Control Shelters
+# Controle de Estoque para Abrigos
 
 Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em Node.js utilizando Express e Sequelize para interação com um banco de dados PostgreSQL.
 
@@ -23,9 +23,9 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
    cd project3-2024a-anthony-luizfelipe-backend
 
 2. Instale as dependências:
-
+   
+    ```
    npm install
-
 ## Configuração 
 
 1. Configure o arquivo config/database.js com suas credenciais do PostgreSQL:
@@ -45,16 +45,39 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
 
 ### Abrigos
 
+- POST /api/abrigos
+    Criar um novo abrigo
+    Body:
+    
+    ```
+    {
+      "nome": "Abrigo A",
+      "localizacao": "Cidade A"
+    }
+    
+- GET /api/abrigos 
+  
+   - Obter todos os abrigos
+    
+- GET /api/abrigos/
+  
+   - Obter um abrigo pelo ID
+    
+- PUT /api/abrigos/
+  
+   - Atualizar um abrigo pelo ID
+   - Body:
+     ```
+     {
+        "nome": "Abrigo Atualizado",
+        "localizacao": "Nova Localização"
+     }
 
+- DELETE /api/abrigos/
+  
+   - Deletar um abrigo pelo ID
 
-
-
-
-
-
-
-
-
+### Itens
 
 
 
