@@ -30,6 +30,7 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
 
 1. Configure o arquivo config/database.js com suas credenciais do PostgreSQL:
 
+    ```
     module.exports = {
         username: 'seu_usuario',
         password: 'sua_senha',
@@ -38,6 +39,23 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
         dialect: 'postgres',
     };
 
-2. Certifique-se de que o banco de dados PostgreSQL esteja rodando e que as tabelas sejam criadas automaticamente quando a aplicação iniciar.
+3. Certifique-se de que o banco de dados PostgreSQL esteja rodando e que as tabelas sejam criadas automaticamente quando a aplicação iniciar.
 
 ## Endpoints
+
+### Abrigos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
