@@ -45,39 +45,145 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
 
 ### Abrigos
 
-- POST /api/abrigos
-    Criar um novo abrigo
-    Body:
-    
-    ```
+- **POST /api/abrigos**
+  - Criar um novo abrigo
+  - Body:
+    ```json
     {
-      "nome": "Abrigo A",
-      "localizacao": "Cidade A"
+        "nome": "Abrigo A",
+        "localizacao": "Cidade A"
     }
-    
-- GET /api/abrigos 
-  
-   - Obter todos os abrigos
-    
-- GET /api/abrigos/
-  
-   - Obter um abrigo pelo ID
-    
-- PUT /api/abrigos/
-  
-   - Atualizar um abrigo pelo ID
-   - Body:
-     ```
-     {
+    ```
+
+- **GET /api/abrigos**
+  - Obter todos os abrigos
+
+- **GET /api/abrigos/:id**
+  - Obter um abrigo pelo ID
+
+- **PUT /api/abrigos/:id**
+  - Atualizar um abrigo pelo ID
+  - Body:
+    ```json
+    {
         "nome": "Abrigo Atualizado",
         "localizacao": "Nova Localização"
-     }
+    }
+    ```
 
-- DELETE /api/abrigos/
-  
-   - Deletar um abrigo pelo ID
+- **DELETE /api/abrigos/:id**
+  - Deletar um abrigo pelo ID
 
 ### Itens
+
+- **POST /api/itens**
+  - Criar um novo item
+  - Body:
+    ```json
+    {
+        "name": "Item 1",
+        "quantity": 10,
+        "category": "Categoria 1",
+        "shelterId": 1
+    }
+    ```
+
+- **GET /api/itens**
+  - Obter todos os itens
+
+- **GET /api/itens/:id**
+  - Obter um item pelo ID
+
+- **PUT /api/itens/:id**
+  - Atualizar um item pelo ID
+  - Body:
+    ```json
+    {
+        "name": "Item Atualizado",
+        "quantity": 20,
+        "category": "Nova Categoria",
+        "shelterId": 1
+    }
+    ```
+
+- **DELETE /api/itens/:id**
+  - Deletar um item pelo ID
+
+### Usuários
+
+- **POST /api/usuarios**
+  - Criar um novo usuário
+  - Body:
+    ```json
+    {
+        "username": "usuario1",
+        "password": "senha1",
+        "email": "usuario1@example.com",
+        "shelterId": 1
+    }
+    ```
+
+- **GET /api/usuarios**
+  - Obter todos os usuários
+
+- **GET /api/usuarios/:id**
+  - Obter um usuário pelo ID
+
+- **PUT /api/usuarios/:id**
+  - Atualizar um usuário pelo ID
+  - Body:
+    ```json
+    {
+        "username": "usuarioAtualizado",
+        "password": "novaSenha",
+        "email": "usuarioAtualizado@example.com",
+        "shelterId": 1
+    }
+    ```
+
+- **DELETE /api/usuarios/:id**
+  - Deletar um usuário pelo ID
+
+### Doações
+
+- **POST /api/doacoes**
+  - Criar uma nova doação
+  - Body:
+    ```json
+    {
+        "quantity": 5,
+        "date": "2024-06-05T10:00:00.000Z",
+        "itemId": 1,
+        "userId": 1
+    }
+    ```
+
+- **GET /api/doacoes**
+  - Obter todas as doações
+
+- **GET /api/doacoes/:id**
+  - Obter uma doação pelo ID
+
+- **PUT /api/doacoes/:id**
+  - Atualizar uma doação pelo ID
+  - Body:
+    ```json
+    {
+        "quantity": 10,
+        "date": "2024-06-06T11:00:00.000Z",
+        "itemId": 1,
+        "userId": 1
+    }
+    ```
+
+- **DELETE /api/doacoes/:id**
+  - Deletar uma doação pelo ID
+
+## Execução
+
+1. Inicie o servidor:
+   ```bash
+   npm run dev
 
 
 
