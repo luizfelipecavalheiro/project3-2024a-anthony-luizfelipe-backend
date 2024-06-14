@@ -15,9 +15,6 @@ Usuario.belongsTo(Abrigo, { foreignKey: 'abrigoId' });
 Item.hasMany(Doacao, { foreignKey: 'itemId' });
 Doacao.belongsTo(Item, { foreignKey: 'itemId' });
 
-Usuario.hasMany(Doacao, { foreignKey: 'usuarioId' });
-Doacao.belongsTo(Usuario, { foreignKey: 'usuarioId' });
-
 const initModels = async () => {
     await sequelize.sync();
 };
