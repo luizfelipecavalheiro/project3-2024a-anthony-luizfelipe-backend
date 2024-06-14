@@ -81,10 +81,10 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
   - Body:
     ```json
     {
-        "name": "Item 1",
-        "quantity": 10,
-        "category": "Categoria 1",
-        "shelterId": 1
+        "nome": "Item 1",
+        "quantidade": 10,
+        "categoria": "Categoria 1",
+        "abrigoId": 1
     }
     ```
 
@@ -99,10 +99,10 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
   - Body:
     ```json
     {
-        "name": "Item Atualizado",
-        "quantity": 20,
-        "category": "Nova Categoria",
-        "shelterId": 1
+        "nome": "Item Atualizado",
+        "quantidade": 20,
+        "categoria": "Nova Categoria",
+        "abrigoId": 1
     }
     ```
 
@@ -116,10 +116,10 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
   - Body:
     ```json
     {
-        "username": "usuario1",
-        "password": "senha1",
+        "nomeUsuario": "usuario1",
+        "senha": "senha1",
         "email": "usuario1@example.com",
-        "shelterId": 1
+        "abrigoId": 1
     }
     ```
 
@@ -134,10 +134,10 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
   - Body:
     ```json
     {
-        "username": "usuarioAtualizado",
-        "password": "novaSenha",
+        "nomeUsuario": "usuarioAtualizado",
+        "senha": "novaSenha",
         "email": "usuarioAtualizado@example.com",
-        "shelterId": 1
+        "abrigoId": 1
     }
     ```
 
@@ -151,10 +151,9 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
   - Body:
     ```json
     {
-        "quantity": 5,
+        "quantidade": 5,
         "date": "2024-06-05T10:00:00.000Z",
-        "itemId": 1,
-        "userId": 1
+        "itemId": 1
     }
     ```
 
@@ -169,10 +168,9 @@ Este projeto é um sistema de controle de estoque para abrigos, desenvolvido em 
   - Body:
     ```json
     {
-        "quantity": 10,
-        "date": "2024-06-06T11:00:00.000Z",
-        "itemId": 1,
-        "userId": 1
+        "quantidade": 10,
+        "data": "2024-06-06T11:00:00.000Z",
+        "itemId": 1
     }
     ```
 
